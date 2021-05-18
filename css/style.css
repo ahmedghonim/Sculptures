@@ -1,5 +1,6 @@
 :root {
   --gold: #e4b852;
+  --dark:#232323;
 }
 
 * {
@@ -8,7 +9,7 @@
 }
 
 body {
-  background-color: #232323;
+  background-color: var(--dark);
 }
 
 h2 {
@@ -102,7 +103,7 @@ h2 {
   position: fixed;
   top: 100px;
   right: 0px;
-  background-color: violet;
+  background-color: var(--dark);
   z-index: 10;
 }
 
@@ -117,6 +118,10 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.sid-mnu .menu i {
+  color: var(--gold);
 }
 
 .sid-mnu .fa-bars {
@@ -138,7 +143,11 @@ input[type="range"] {
   height: 110px;
 }
 
-.colorBox {
+.colorcontainer {
+  background-color: var(--dark);
+}
+
+.colorcontainer .colorBox {
   width: 30px;
   height: 30px;
   background-color: red;
